@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Priority To Do List</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body ng-app = "toDoModule" ng-controller="toDoController">
+<!-- ng-app ng controller ng-model -->
+<h1>To Do List of Awesome Chores</h1>
+<form class="">
+  To Do:<input type="text" name="chore" ng-model= "displayChore(chore)">
+  <!-- could you make the priority blank and not list numbers-more functional -->
+  Priority: <input type="number" name="priority" value=""ng-model="displayChore()">
+  <button type="submit" name="submit">Add to List</button>
+</form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
